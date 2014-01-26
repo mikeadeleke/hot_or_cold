@@ -2,7 +2,7 @@ var randomnumber = Math.floor(Math.random()*11);
 var x = prompt("Pick a number between 1 and 10.");
 var number = function(x) {
   if (randomnumber == x)
-    alert("Amazing! Are you cheating?"); 
+    alert("Amazing! Are you cheating ;)"); 
   else if (randomnumber > x)
     alert("Too hot!");
   else if (randomnumber < x)
@@ -11,9 +11,7 @@ var number = function(x) {
     alert("Please enter a number between 1 and 10.");
 };
 
-
-
-
+console.log(number(x));
 
 
 
