@@ -1,24 +1,15 @@
-var random_number = Math.random(1..10)
-var x = prompt("Pick a number between 1 and 10.")
-function(x) {
-  if random_number == x
-    alert("Amazing! Are you cheating?") 
-  else if random_number > x
-    alert("Too hot!")
-  else if random_number < x
-    alert("Too cold!")
+var randomnumber = Math.floor(Math.random()*11);
+var x = prompt("Pick a number between 1 and 10.");
+var number = function(x) {
+  if (randomnumber == x)
+    alert("Amazing! Are you cheating?"); 
+  else if (randomnumber > x)
+    alert("Too hot!");
+  else if (randomnumber < x)
+    alert("Too cold!");
   else
-    alert("Please enter a number between 1 and 10.")
-}
-
-
-
-
-
-
-
-
-
+    alert("Please enter a number between 1 and 10.");
+};
 
 
 
