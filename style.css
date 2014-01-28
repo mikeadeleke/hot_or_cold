@@ -94,7 +94,7 @@ body {
   font-family: Lucida Grande;
 }
 
-.button, #button {
+.button, #button, #cheat {
   font-family: Lucida Grande;
   font-size: 14px;
   border-radius: 5px;
@@ -106,6 +106,10 @@ body {
 }
 
 #button {
+  background-color: red;
+}
+
+#cheat {
   background-color: blue;
 }
 
@@ -122,11 +126,16 @@ body {
 
 }
 
+#guess {
+  
+}
+
+#submit {
+  
+}
+
 
 
 /*end of javascript*/
-
-
-
 
 

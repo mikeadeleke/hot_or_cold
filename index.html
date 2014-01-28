@@ -4,6 +4,7 @@
 <meta charset=utf-8 />
 <title>Hot or Cold</title>
   <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -11,11 +12,15 @@
     <h1><span id="hot">Hot</span> <span id="or">or</span> Cold?</h1>
     <div class="js">
       <div class="wrapper">
-        <p>Make a guess between <br> 1 and 10.</p><br><br>
+        <p>Make a guess between <br> 1 and 100.</p><br><br>
         <input type="text" name="guess" id="guess" ><br><br>
         <input type="submit" name="guess" id="submit" class="button"><br><br><br>
-        <button class="button">New Game</button>
-        <button id="button">Cheat</button>
+        <div class="hidden">
+           <p id="feedback"></p>
+           <p id="answer"></p>
+        </div>
+        <button id="button">New Game</button>
+        <button id="cheat">Cheat</button>
       </div>
     </div>
   </div>
