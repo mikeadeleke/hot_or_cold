@@ -1,16 +1,10 @@
 $(document).ready(function() {
   var randomnumber = Math.floor(Math.random()*101);
   
-  $("#submit").click(game); 
-  $("#guess").keydown(function(e) {
-      e.preventDefault(); 
-       if (e.which == 13) {
-            game();
-       }
-    });
+  $("#submit").click(game);
 
   function game() {
-    var x = $("#guess").val();
+    var x = $("#submit").val();
     if (randomnumber == x) {
       $("#feedback").text("You guessed right! Are you cheating ;)"); }
     else if (randomnumber > x) {
