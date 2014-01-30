@@ -4,8 +4,8 @@ $(document).ready(function() {
   $("#submit").click(game);
 
   function game() {
-    var x = $("#submit").val();
-    if (randomnumber === x) {
+    var x = parseInt($("#submit"), 10);
+    if (randomnumber == x) {
       $("#feedback").text("You guessed right! Are you cheating ;)").css("color", "red"); 
     } 
     else if (randomnumber > x) {
@@ -21,7 +21,7 @@ $(document).ready(function() {
   
   $("#button").click(function() {
     var randomnumber = Math.floor(Math.random()*101);
-    var x = document.getElementById('guess').value = "";
+    document.getElementById('guess').value = "";
     $("#feedback").text("");
   });
     
