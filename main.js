@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("#submit").click(game);
 
   function game() {
-    var x = parseInt($("#submit"), 10);
+    var x = parseInt($("#guess").val(), 10);
     if (randomnumber == x) {
       $("#feedback").text("You guessed right! Are you cheating ;)").css("color", "red"); 
     } 
