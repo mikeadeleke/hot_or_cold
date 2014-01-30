@@ -9,10 +9,10 @@ $(document).ready(function() {
     if (randomnumber == x) {
       $("#feedback").text("You guessed right! Are you cheating ;)").css("color", "red"); 
     } 
-    else if (randomnumber > x) {
+    else if (randomnumber < x) {
       $("#feedback").text("Too hot my friend!").css("color", "red"); 
     } 
-    else if (randomnumber < x) {
+    else if (randomnumber > x) {
       $("#feedback").text("Too cold my friend!").css("color", "blue"); 
     } 
     else {
@@ -21,7 +21,7 @@ $(document).ready(function() {
   }
   
   $("#button").click(function() {
-    $("#guess").reset();
+    randomnumber = Math.floor(Math.random()*101);
     $("#feedback").text("");
   });
     
