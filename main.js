@@ -21,7 +21,6 @@ $(document).ready(function() {
   }
   
   $("#button").click(function() {
-    var randomnumber = Math.floor(Math.random()*101);
     $("#guess").reset();
     $("#feedback").text("");
   });
