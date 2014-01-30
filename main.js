@@ -20,13 +20,14 @@ $(document).ready(function() {
   }
   
   $("#button").click(function() {
-    var randomnumber = Math.floor(Math.random()*101);
+    var newRandomNumber = Math.floor(Math.random()*101);
     document.getElementById('guess').value = "";
     $("#feedback").text("");
   });
     
   
   $("#cheat").click(function() {
+    var randomnumber = Math.floor(Math.random()*101);
     $("#feedback").text(randomnumber).css("color", "blue");
   });
 
