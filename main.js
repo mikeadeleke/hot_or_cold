@@ -2,6 +2,7 @@ $(document).ready(function() {
   var randomnumber = Math.floor(Math.random()*101);
   
   $("#submit").click(game);
+ 
 
   function game() {
     var x = parseInt($("#guess").val(), 10);
@@ -20,14 +21,13 @@ $(document).ready(function() {
   }
   
   $("#button").click(function() {
-    var newRandomNumber = Math.floor(Math.random()*101);
-    document.getElementById('guess').value = "";
+    var randomnumber = Math.floor(Math.random()*101);
+    $("#guess").reset();
     $("#feedback").text("");
   });
     
   
   $("#cheat").click(function() {
-    var randomnumber = Math.floor(Math.random()*101);
     $("#feedback").text(randomnumber).css("color", "blue");
   });
 
